@@ -1,5 +1,6 @@
 package com.hdfc.capstone.service;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Test;
@@ -19,6 +20,7 @@ class EmployeeServiceTest {
 	void testGetEmployeeByEmployeeId() throws EmployeeNotFoundException{
 		Employee employee = employeeService.getEmployeeByEmployeeId(103);
 		assertNotNull(employee);
+		assertEquals(103, employee.getEmployeeId());
 	}
 
 }
