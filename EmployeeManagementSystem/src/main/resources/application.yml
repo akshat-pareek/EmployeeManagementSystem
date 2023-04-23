@@ -1,0 +1,6 @@
+server:
+  ssl:
+    key-alias: employee-https
+    key-store: classpath:https-employee.jks
+    key-store-type: JKS
+    key-store-password: password
