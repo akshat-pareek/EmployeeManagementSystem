@@ -23,6 +23,8 @@ dependencies {
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	annotationProcessor 'org.projectlombok:lombok'
+	implementation group: 'commons-codec', name: 'commons-codec', version: '1.15'
+	implementation group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.68'
 }
 
 tasks.named('test') {

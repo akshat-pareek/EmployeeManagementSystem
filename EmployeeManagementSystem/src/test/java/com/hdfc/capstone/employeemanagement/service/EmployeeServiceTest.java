@@ -7,8 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.hdfc.capstone.employeemanagement.entity.Employee;
-import com.hdfc.capstone.employeemanagement.exception.EmployeeNotFoundException;
+import com.hdfc.capstone.employeemanagement.vo.EmployeeVO;
 
 @SpringBootTest
 class EmployeeServiceTest {
@@ -17,10 +16,10 @@ class EmployeeServiceTest {
 	private IEmployeeService employeeService;
 	
 	@Test
-	void testGetEmployeeByEmployeeId() throws EmployeeNotFoundException{
-		Employee employee = employeeService.getEmployeeByEmployeeId(103);
-		assertNotNull(employee);
-		assertEquals(103, employee.getEmployeeId());
+	void testGetEmployeeByEmployeeId() throws Exception{
+		EmployeeVO employeeVo = employeeService.getEmployeeByEmployeeId(103);
+		assertNotNull(employeeVo);
+		assertEquals(103, employeeVo.getEmployeeId());
 	}
 
 }
