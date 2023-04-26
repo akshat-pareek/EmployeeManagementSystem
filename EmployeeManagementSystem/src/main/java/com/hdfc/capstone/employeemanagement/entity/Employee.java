@@ -6,7 +6,12 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
-
+/**
+ * 
+ * @author Akshat Pareek
+ * Date 21/04/23
+ *
+ */
 @Entity
 @Table(name="employee")
 public class Employee {

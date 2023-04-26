@@ -1,5 +1,10 @@
 package com.hdfc.capstone.client.controller;
-
+/**
+ * 
+ * @author Akshat Pareek
+ * Date 24/04/23
+ *
+ */
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

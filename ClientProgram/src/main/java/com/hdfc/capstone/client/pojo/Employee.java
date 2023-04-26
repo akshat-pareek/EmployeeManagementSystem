@@ -1,5 +1,10 @@
 package com.hdfc.capstone.client.pojo;
-
+/**
+ * 
+ * @author Akshat Pareek
+ * Date 23/04/23
+ *
+ */
 import java.sql.Date;
 
 

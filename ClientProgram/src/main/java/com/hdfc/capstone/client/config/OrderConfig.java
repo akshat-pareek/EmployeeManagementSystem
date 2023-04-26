@@ -1,5 +1,10 @@
 package com.hdfc.capstone.client.config;
-
+/**
+ * 
+ * @author Akshat Pareek
+ * Date 23/04/23
+ *
+ */
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSession;

@@ -1,5 +1,10 @@
 package com.hdfc.capstone.employeemanagement.vo;
-
+/**
+ * 
+ * @author Akshat Pareek
+ * Date 24/04/23
+ *
+ */
 import java.security.Security;
 
 import javax.crypto.Cipher;
@@ -42,15 +47,14 @@ public class EmployeeVO {
 		// TODO Auto-generated constructor stub
 	}
 	
-	private static final String ALGORITHM = "AES";
-    private static final String KEY = "09876543210987654321098765432109";
+	private static final String KEY = "32313029282726252423222120191817";
     
-    public static String encrypt(String data) throws Exception {
+    public static String encrypt(String date) throws Exception {
         Security.addProvider(new BouncyCastleProvider());
-        Cipher cipher = Cipher.getInstance(ALGORITHM);
-        SecretKeySpec key = new SecretKeySpec(KEY.getBytes(), ALGORITHM);
+        Cipher cipher = Cipher.getInstance("AES");
+        SecretKeySpec key = new SecretKeySpec(KEY.getBytes(), "AES");
         cipher.init(Cipher.ENCRYPT_MODE, key);
-        byte[] encrypted = cipher.doFinal(data.getBytes());
+        byte[] encrypted = cipher.doFinal(date.getBytes());
         return Base64Utils.encodeToString(encrypted);
     }
 }
