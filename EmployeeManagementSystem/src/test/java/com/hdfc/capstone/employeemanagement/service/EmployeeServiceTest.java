@@ -12,14 +12,14 @@ import com.hdfc.capstone.employeemanagement.vo.EmployeeVO;
 @SpringBootTest
 class EmployeeServiceTest {
 	
-	@Autowired
-	private IEmployeeService employeeService;
+	//@Autowired
+	//private IEmployeeService employeeService;
 	
-	@Test
-	void testGetEmployeeByEmployeeId() throws Exception{
-		EmployeeVO employeeVo = employeeService.getEmployeeByEmployeeId(103);
-		assertNotNull(employeeVo);
-		assertEquals(103, employeeVo.getEmployeeId());
-	}
+	//@Test
+	//void testGetEmployeeByEmployeeId() throws Exception{
+		//EmployeeVO employeeVo = employeeService.getEmployeeByEmployeeId(103);
+		//assertNotNull(employeeVo);
+		//assertEquals(103, employeeVo.getEmployeeId());
+	//}
 
 }

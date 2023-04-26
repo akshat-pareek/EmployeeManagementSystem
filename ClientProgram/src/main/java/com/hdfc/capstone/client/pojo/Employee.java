@@ -1,4 +1,4 @@
-package com.hdfc.capstone.client.entity;
+package com.hdfc.capstone.client.pojo;
 
 import java.sql.Date;
 
